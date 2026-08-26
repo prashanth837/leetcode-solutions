@@ -1,11 +1,8 @@
 class Solution:
     def shortestBeautifulSubstring(self, s: str, k: int) -> str:
         min_str=""
-        min_len_str=float('inf')
         freq={}
         freq[1]=0
-        a=[]
-        isvalid=False
         l=0
         if s.count('1')<k:
             return ""
