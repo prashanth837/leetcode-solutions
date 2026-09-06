@@ -1,4 +1,2 @@
 # Write your MySQL query statement below
-select name as Customers from Customers as c left join Orders as o on c.id=o.customerId where o.id is null
--- union
--- select name as Customers from Customers as c right join Orders as o on c.id=o.customerId where o.id is null;
+select name as Customers from Customers as c left join Orders as o on c.id=o.customerId where o.customerId is null;
