@@ -4,7 +4,7 @@ class Solution:
         y="0"+x[::-1]
         c=0
         k=1
-        for i in range(len(s)):
-            c+=(y.index(s[i])*k)
+        for i in s: 
+            c+=((123-ord(i))*k)
             k+=1
         return c
