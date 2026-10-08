@@ -1,7 +1,7 @@
 class Solution:
     def removeOuterParentheses(self, s: str) -> str:
         stack=[]
-        arr=[]
+        res=""
         c1=0
         c2=0
         for i in range(len(s)): 
@@ -11,9 +11,8 @@ class Solution:
             else:
                 c2+=1
             if c1==c2:
-                arr.append("".join(stack[1:len(stack)-1]))
+                res+="".join(stack[1:len(stack)-1])
                 c1=0
                 c2=0
                 stack=[]
-        print(stack)
-        return "".join(arr)
+        return res
